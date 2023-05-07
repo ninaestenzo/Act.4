@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity No.4</title>
+    <link ref="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif ;
+    box-sizing: border-box;
+}
+body{
+    background-color: #07141d;
+}
+#accordion{
+    margin: 100px auto;
+    width: 600px;
+}
+#accordion li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+#accordion li label{
+    padding:10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #c20000;
+}   
+#accordion li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: #333;
+}
+#accordion label + input[type="radio"]{
+    display: none;
+}
+#accordion .content{
+    padding: o 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content{
+    max-height: 400px;
+}
+    </style>
+</head>
+<body>
+    <ul id="accordion">
+        <li>
+            <label for="first">What is Bootstrap? <span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="first" checked>
+            <div class="content">
+                 <p>Bootstrap is a popular open-source framework used for developing responsive and mobile-first websites and web applications. It provides a collection of pre-built HTML, CSS, and JavaScript components that enable developers to quickly and efficiently create visually appealing and functional interfaces. Bootstrap simplifies the process of designing and structuring web pages by offering a grid system, responsive breakpoints, typography styles, and a wide range of ready-to-use UI elements such as buttons, forms, navigation bars, and carousels. With its intuitive and customizable approach, Bootstrap empowers developers to build modern and consistent web experiences across different devices and screen sizes with minimal effort.</p>
+            </div>
+        </li>
+        <li>
+            <label for="second">Is it necessary to use Bootstrap in your project?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="second">
+            <div class="content">
+                 <p>The use of Bootstrap in web projects is not necessary, but it can be highly beneficial. Bootstrap is a popular front-end framework that offers a wide range of pre-designed components and responsive grid systems, allowing developers to create visually appealing and mobile-friendly websites with relative ease. It saves time and effort by providing a solid foundation of CSS and JavaScript components, reducing the need for custom coding. However, its usage depends on the specific requirements and preferences of the project. While it can expedite development and provide consistency across different browsers and devices, some projects may have unique design or performance considerations that might not align with Bootstrap's default styles and features. Therefore, the decision to use Bootstrap should be made based on the project's needs, development timeline, and the trade-offs between convenience and customization.</p>
+            </div>
+        </li>
+        <li>
+            <label for="third">Give some examples of some website that currently use or used Bootstrap in the past.<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="third">
+            <div class="content">
+                 <p>Here are some examples of websites that currently use or have used Bootstrap in the past:
+
+                    Airbnb (www.airbnb.com)
+                    Spotify (www.spotify.com)
+                    Slack (www.slack.com)
+                    Udemy (www.udemy.com)
+                    Coursera (www.coursera.org)
+                    GitHub (www.github.com)
+                    Codecademy (www.codecademy.com)
+                    Behance (www.behance.net)
+                    Lyft (www.lyft.com)
+                    Starbucks (www.starbucks.com)
+                    These websites have either used Bootstrap in the past or currently utilize it for their front-end development. Bootstrap is a popular framework for building responsive and mobile-first websites, and it has been widely adopted by many organizations and developers.</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
